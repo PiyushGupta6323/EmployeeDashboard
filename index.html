@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.0/css/all.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="employee-detail">
+            <h2 style="border-left: 4px solid #5dcbbb; justify-content: start; display: inline;"><span style="margin-left: 2%;">Detail Employee</span></h2>
+            <div class="actions">
+                <select style="margin-right: 5px; background-color: #101010; justify-content: right;">
+                    <option>This Year</option>
+                    <option>Last Year</option>
+                </select>
+                <button class="download-info"><i class="fa fa-download" aria-hidden="true"></i> Download Info</button>
+            </div>
+            <div class="employee-info">
+                <img src="dp.png.jfif" alt="Natashia Khaleira" class="profile-pic">
+                <div class="info">
+                    <h2>Natashia Khaleira</h2>
+                    <div class ="details">
+                        <div>
+                            <p>Role</p>
+                            <h3>Head of UX Design</h3>
+                        </div>
+                        <div>
+                            <p>Phone Number</p>
+                            <h3>(+62) 812 3456-7890</h3>
+                        </div>
+                        <div>
+                            <p>Email Address</p>
+                            <h3>natashiakhaleira@gmail.com</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stats">
+                <div class="stat">
+                    <h3><i class="fa fa-long-arrow-right" aria-hidden="true"></i> 309</h3>
+                    <p style="padding-left: 15px;">Total Attendance</p>
+                </div>
+                <div class="stat">
+                    <h3><i class="fa-regular fa-arrow-up-right-from-square"></i> 08:46</h3>
+                    <p style="padding-left: 15px;">Avg Check In Time</p>
+                </div>
+                <div class="stat">
+                    <h3><i class="fa-solid fa-down-left-and-up-right-to-center"></i> 17:04</h3>
+                    <p style="padding-left: 15px;">Avg Check Out Time</p>
+                </div>
+                <div class="stat">
+                    <h3><i class="fa fa-medal"></i> Role Model</h3>
+                    <p style="padding-left: 15px;">Employee Predicate</p>
+                </div>
+            </div>
+            
+        </div>
+        <div class="attendance-history">
+            <h2 style="border-left: 4px solid #5dcbbb;display: inline;"><span style="margin-left: 2%;"></span>Attendance History</span></h2>
+            <div class="controls">
+                <button id="grid-view"><i class="fa fa-th-large"></i></button>
+                <button id="list-view"><i class="fa fa-bars"></i></button>
+                <button id="sort-asc"><i class="fa fa-sort-asc" aria-hidden="true"></i> Sort</button>
+                <button id="sort-desc"><i class="fa fa-sort-desc" aria-hidden="true"></i> Sort</button>
+                <!-- <button id="filter-on-time"><i class="fa fa-filter"></i>Time</button>
+                <button id="filter-late"><i class="fa fa-filter"></i>Late</button>
+                <button id="filter-absent"><i class="fa fa-filter"></i>Absent</button> -->
+                
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Filter</button>
+                <div class="dropdown-content">
+                    <button id="filter-all">All</button>
+                    <button id="filter-on-time">On Time</button>
+                    <button id="filter-late">Late</button>
+                    <button id="filter-absent">Absent</button>
+                </div>
+            </div>
+            <div class="attendance-records grid-view">
+                <!-- Attendance records will be dynamically generated here -->
+            </div>
+        </div>
+    </div>
+    <script src="javascripts.js"></script>
+</body>
+</html>

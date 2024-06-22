@@ -1,0 +1,253 @@
+body {
+    background-color: #54595f;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 30px;
+    /*background-color: #38393d;*/
+    border-radius: 8px;
+    margin-left: 5px;
+}
+
+.employee-detail, .attendance-history {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #101010;
+    border-radius: 8px;
+}
+
+.employee-info {
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.info h2 {
+    margin: 0 0 10px 0;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.stat {
+    background-color: #393939;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: left;
+    flex-grow: 1;
+    margin: 0 5px;
+    font-size: 8pt;
+    
+}
+
+.stat h3 {
+    margin: 5px 0 0 0;
+}
+.stat p {
+    color:#888b8f ;
+}
+.stat span {
+    font-size: 4px;
+}
+
+.actions {
+    display: inline;
+    justify-content: right;
+    margin-top: 20px;
+    margin-left: 43%
+}
+
+.actions select, .actions button {
+    background-color: #7289da;
+    border: 1px solid #38393d;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.controls {
+    display: inline;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+    margin-left: 32%;
+}
+
+.controls button {
+    background-color: #000;
+    border: 0.6px solid #fcfcfc;
+    color: #ffffff;
+    padding: 6px 16px;
+    border-radius: 8px;
+    margin-left: 6px;
+    cursor: pointer;
+}
+.download-info {
+    background-color: #5dcbbb!important;
+    color: #000000!important;
+
+}
+.attendance-records.grid-view {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.attendance-records.grid-view span{
+    font-size: 8pt;
+}
+
+.attendance-record {
+    background-color: #393939;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 10px;
+    /* width: calc(33.333% - 20px); */
+    box-sizing: border-box;
+}
+
+.attendance-record.grid-view {
+    width: calc(33.333% - 20px);
+}
+
+.attendance-record.list-view {
+    width: calc(100% - 20px);
+}							  
+
+.attendance-record p {
+    margin: 5px 0;
+}
+
+.on-time {
+    color: #5dcbbb;
+    float: right;
+    border: 1px solid #5dcbbb;
+    border-radius: 29px;
+    font-size: 10px;
+    padding: 2px;
+}
+
+.late {
+    color: #e67e22;
+    float: right;
+    border: 1px solid #e67e22;
+    border-radius: 10px;
+    font-size: 14px;
+    padding: 2px;
+}
+
+.absent {
+    color: #ffffff;
+    float: right;
+    border: 1px solid #54595f;
+    border-radius: 10px;
+    font-size: 14px;
+    padding: 2px;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    font-size: 10px;
+}
+
+    .details div {
+        padding-right: 30px;
+    }
+    .details div p {
+        color: #888b8f ;
+    }
+    .check in time {
+        color: #ffffff;
+        float: right;
+        font-size: 10px;
+    }
+    .check out time {
+        color: #ffffff;
+        float: right;
+        font-size: 10px;
+    }
+    .column {
+        float: left;
+        width: 50%;
+        font-size: 8pt;
+        padding-top:2pt;
+      }
+      
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      .checkin-checkout {
+        font-size: 10px;
+        margin-top: 8px;
+        color: #888b8f;
+      }
+      .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    
+    /* Dropdown Button */
+    .dropbtn {
+        background-color: #000000;
+        color: white;
+        padding: 6px 9px;
+        font-size: 16px;
+        border: 0.5px solid white;
+        border: radius;
+        border-radius: 5px;
+    }
+    
+    .dropbtn:hover, .dropbtn:focus {
+        background-color: #080808;
+    }
+    
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    
+    /* Dropdown Buttons */
+    .dropdown-btn {
+        background-color: #f9f9f9;
+        color: black;
+        padding: 12px 16px;
+        text-align: left;
+        border: none;
+        width: 100%;
+        box-sizing: border-box;
+        cursor: pointer;
+    }
+    
+    .dropdown-btn:hover {
+        background-color: #ddd;
+    }
+    
+    /* Show the Dropdown Content on Hover */
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    
